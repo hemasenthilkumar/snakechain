@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<table class="table table-hover">
+<tr>
+<th>Index</th>
+<th>Timestamp</th>
+<th>Hash Key</th>
+</tr>
+{% for val in l %}
+<tr>
+<td>{{val.index}}</td>
+<td>{{val.timestamp}}</td>
+<td>{{val.hash_}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
